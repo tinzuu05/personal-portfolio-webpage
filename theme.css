@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #484860;
+  font-family: Times New Roman;
+
+}
+
+#welcome-section {
+  padding-top: 150px;
+  background-color: #787890;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Times New Roman;
+  text-align: center;
+  height:100vh;
+  width:100%;
+}
+
+h1 {
+  color: #f0f0f0;
+}
+
+.projects_header {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Times New Roman;
+  border-bottom: solid;
+  border-color: #787890;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.project_image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 500px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-title-div {
+  position:absolute;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 0.5rem 8rem;
+}
+
+a:link  {
+    text-decoration: none;
+    color: #D5DED9;
+  }
+
+a:visited {
+      text-decoration: none;
+      color: #D9CEB2;
+  }
+
+.navbar {
+  word-spacing:5px;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10PX;
+  background-color: #1B2832;
+  top: 0;
+  position: fixed;
+  width:100%;
+}
+
+.navbar a{
+  float:right;
+}
+
+#contact {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #525454;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
